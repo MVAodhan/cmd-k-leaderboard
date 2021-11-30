@@ -83,7 +83,7 @@ export default function Home() {
 
         getOptions();
 
-        //Store vode in supabase profiles table and
+        //Store vote in supabase profiles table and
         const { data: votes, error: profilesError } = await supabase
           .from("votes")
           .insert([
